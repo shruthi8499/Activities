@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd"
+ >
+ 
+ 
+ <bean id="loc" class="com.device.Location">
+ 
+ <property name="locationName" value="Hyderabad"/>
+ 
+ </bean>
+ 
+ <bean id="device1" class="com.device.Device">
+ 
+ <property name="deviceName" value="Apple"/>
+ <property name="daysOnRent" value="78"/>
+ <property name="location" ref="loc"/>
+ 
+ </bean>
+ 
+ <bean id="technician" class="com.device.Technician">
+ 
+ <property name="technicianName" value="Peter"/>
+ <property name="device" ref="device1"/>
+ 
+ </bean>
+
+ </beans>
+ 
