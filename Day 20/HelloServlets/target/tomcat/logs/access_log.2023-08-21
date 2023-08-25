@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:10:28:00 +0530] "GET /HelloServlets/ HTTP/1.1" 200 57 http-bio-9095-exec-1 484
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:10:28:04 +0530] "GET /HelloServlets/home HTTP/1.1" 404 987 http-bio-9095-exec-2 2
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:10:28:10 +0530] "GET /HelloServlets/ HTTP/1.1" 200 57 http-bio-9095-exec-3 14
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:10:28:16 +0530] "GET /HelloServlets/home HTTP/1.1" 404 987 http-bio-9095-exec-4 1
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:11:39:15 +0530] "GET /HelloServlets/helllo HTTP/1.1" 404 991 http-bio-9095-exec-6 0
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:11:39:31 +0530] "GET /HelloServlets/hello HTTP/1.1" 200 20 http-bio-9095-exec-7 2
