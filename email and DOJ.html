@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        /* Styling for text fields */
+        input[type="email"],
+        input[type="date"] {
+            color: blue;
+            font-size: 25px;
+        }
+
+        /* Styling for labels */
+        label {
+            color: black;
+            font-size: 27px;
+        }
+
+        /* Styling for the form and border */
+        form {
+            border: 3px solid brown;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <label for="email">Email your mail</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="joinDate">Enter the date of joining</label>
+        <input type="date" id="joinDate" name="joinDate" min="2023-09-04" max="2023-12-31"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

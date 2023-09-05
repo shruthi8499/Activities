@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// Define the callQuality function to create call quality objects
+function callQuality(callid, sender, receiver, droprate) {
+    return {
+        callid,
+        sender,
+        receiver,
+        droprate,
+    };
+}
+
+// Create an array to store callQuality objects
+const callQualityArray = [];
+// Add objects to the array
+callQualityArray.push(callQuality(1,"Jhon","smith","15%"));
+callQualityArray.push(callQuality(2,"Alex","robs","45%"));
+callQualityArray.push(callQuality(3,"Peter","jones","35%"));
+// Function to check drop rate and print a message
+function checkDropRate(callQualityObj) {
+    const dropRate = parseInt(callQualityObj.droprate);
+    if (dropRate > 30) {
+        console.log(`Drop rate for call ${callQualityObj.callid} is above the threshold: ${callQualityObj.droprate}`);
+    }
+}
+//forEach to apply the checkDropRate function to all objects
+callQualityArray.forEach(checkDropRate);
+// Display all objects in the array
+console.log("All Call Quality Objects:");
+callQualityArray.forEach((callQualityObj) => {
+    console.log("Call ID:", callQualityObj.callid);
+    console.log("Sender:", callQualityObj.sender);
+    console.log("Receiver:", callQualityObj.receiver);
+    console.log("Drop Rate:", callQualityObj.droprate);
+});
+
+
+</script>
+</body>
+</html>

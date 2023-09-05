@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// Create the object with the provided details
+var callDetails = {
+    callId: 1,
+    senderNumber: "9988333432",
+    receiverNumber: "9933234434",
+    message: "Hay There!",
+    messagelength: 12,
+    callQuality: "Excellent",
+    callDropRate: "20%",
+};
+
+// Display object property values
+console.log("Call ID:", callDetails.callId);
+console.log("Sender Number:", callDetails.senderNumber);
+console.log("Receiver Number:", callDetails.receiverNumber);
+console.log("Message:", callDetails.message);
+console.log("Message Length:", callDetails.messagelength);
+console.log("Call Quality:", callDetails.callQuality);
+console.log("Call Drop Rate:", callDetails.callDropRate);
+
+// Add a new property
+callDetails.callPlan = "3GB/day";
+
+callDetails.displayCallDetails = function() {
+    const keys = Object.keys(this);
+    for (const key of keys) {
+        if (key !== "displayCallDetails" && this.hasOwnProperty(key)) {
+            console.log(`${key}: ${this[key]}`);
+        }
+    }
+};
+
+// Display the object's property values
+callDetails.displayCallDetails();
+</script>
+</body>
+</html>

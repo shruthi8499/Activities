@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+	function processMessage(msg){
+	console.log(typeof msg)
+	console.log(msg.length)
+	}
+	function printMessage(mycaller,message){
+	mycaller("Hello"+message)
+	}
+	printMessage(processMessage,"Peter")
+	 </script>
+</head>
+</html>

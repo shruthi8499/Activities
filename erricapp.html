@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+	var str1= "Peter goes to school today";  
+	var str2= str1.concat("It is raining");
+	console.log(str2);
+	var str3=  "Betty Botter bought som butter ,But this butter was bitter ,If she put's it in batter ,the batter will be bitter"; 
+	var str4= str1.slice(5,16);
+	console.log(str4);
+	var last=str3.lastIndexOf("butter");
+	console.log(last);
+	var array=str3.split(" ");
+	console.log(array);
+	var start= str3.indexOf("But this butter was bitter");
+	var end = start+"But this butter was bitter".length;
+	const extract= str3.slice(start, end);
+	console.log(extract);
+	var strnum="133.45454";
+        var myfloat=parseFloat(strnum);
+	console.log(typeof myfloat);
+	console.log(myfloat.toFixed(3));
+</script>
+</head>
+</html>
