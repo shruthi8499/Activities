@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message App</title>
+</head>
+<body>
+    <h1>Messages</h1>
+    
+    <!-- Display Messages -->
+    <div id="messageList"></div>
+
+    <!-- Compose Message -->
+    <h2>Compose Message</h2>
+    <div>
+        messageId:<input type="text" id="messageId"/><br>
+        Sender: <input type="text" id="sender" /><br>
+        Receiver: <input type="text" id="receiver" /><br>
+        Message Text: <textarea id="messageText"></textarea><br>
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="fetchMessages()">receive</button>
+    </div>
+
+    <script src="messageajax.js"></script>
+</body>
+</html>

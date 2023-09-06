@@ -1,0 +1,17 @@
+async function getMessage(){
+    return "Hello world"
+}
+var res=getMessage()
+res.then((e)=>console.log(e))
+
+async function checkage(age){
+    if(age>=18){
+        return "candidate can vote"
+    }
+    else{
+        throw new Error()
+    }
+}
+var res=checkAge(15)
+res.then((e)=>console.log(e))
+.catch((e)=>console.log(e))

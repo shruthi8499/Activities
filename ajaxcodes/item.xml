@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+    <itemdetails>
+    <itemname>
+      coffee
+      </itemname>
+      <price>
+      30
+      </price>
+      <quantity>
+       56
+       </quantity>
+
+       <itemname>
+      tea
+      </itemname>
+      <price>
+      20
+      </price>
+      <quantity>
+       54
+       </quantity>
+
+       </itemdetails>
+       </item>
